@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>ALPFA CS 132 Porject Page</title>
+		<title>ALPFA CS 132 Project Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -36,7 +36,7 @@
 							<header>
 								<h1>Hi. We are <strong>ALPFA</strong>.</h1>
 							</header>
-							<p>And this is our project, <strong>[INSERT TITLE]</strong>, <em>a project that aims to explore the Food Industry and it's production capacity within the Philippines.</em></p>
+							<p>And this is our project, <strong>[INSERT TITLE]</strong>, <em>a project that aims to explore the Food Industry and analyze it's production capacity within the Philippines.</em></p>
 							<p>Data Science Team</p>
 							<ul style="list-style-type:none; margin-top:-30px;">
 							  <li>Alec Lopez, Spring</li>
@@ -48,36 +48,97 @@
 				</div>
 			</article>
 
+		<!--TEST PART-->
+		<article id="overview" class="wrapper style2">
+			<div class="container">
+				<header>
+					<h1>Testing Area</h1>
+
+				</header>
+				<div class="row">
+					<div>
+						<span class="icon featured far fa-fist-raised" style="color:black"> </span>
+						<h3>Motivation</h3>
+						
+					</div>
+					<div class="col">
+						<div class="col">
+							<span class="icon solid featured fas fa-chart-line" style="color:black"></span>
+							<h3>Problem</h3>
+						</div>
+						<div class="col">
+							<span class="icon featured fas fa-calendar-alt" style="color:black"></span>
+							<h3>Solution</h3>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+		</article>
+
 		<!-- Overview -->
 			<article id="overview" class="wrapper style2">
 				<div class="container">
 					<header>
-						<h2>Here's an overview of our project.</h2>
-						<!-- <p>Odio turpis amet sed consequat eget posuere consequat.</p> -->
+						<p>O V E R V I E W</p>
+						<br>
+						<h2>Is there going to be enough food to feed all Filipinos?</h2>
+						<br>
+						<p>B A C K G R O U N D</p>
 					</header>
 					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured far fa-fist-raised" style="color:black"> </span>
-								<h3>Objective</h3>
-								<p>To explore and evaluate the relationship between food production and population growth in the Philippines.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-6">
 							<section class="box style1">
 								<span class="icon solid featured fas fa-chart-line" style="color:black"></span>
-								<h3>Analysis</h3>
+								<h3>Problem</h3>
 								<p>Is the Philippines' food industry production keeping up with its population growth?</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-6">
 							<section class="box style1">
 								<span class="icon featured fas fa-calendar-alt" style="color:black"></span>
-								<h3>Prediction</h3>
-								<p>Will the country eventually experience a sustainable relationship between the country's population growth and food production?</p>
+								<h3>Solution</h3>
+								<p>Our solution is to use data science to gain insights on the relationship between local food production and local population growth and foresee potential problems.</p>
 							</section>
 						</div>
 					</div>
+				</div>
+				<br>
+				<h6>This leads us to ask,</h6>
+				<p>Is the Philippines' food industry production keeping up with its population growth?</p>
+				<p>Will the country eventually experience a sustainable relationship between the country's population growth and food production?</p>
+				<!--Hypothesis-->
+				<div class="container">
+					<div class="row aln-center">
+						<div class="col-6">
+							<section class="box style1">
+								<span class="icon featured far fa-lightbulb" style="color:black"> </span>
+								<h3>Null Hypothesis</h3>
+								<p>The rate of food production is at a steady pace with respect to the population growth.</p>
+							</section>
+						</div>
+						<div class="col-6">
+							<section class="box style1">
+								<span class="icon featured far fa-lightbulb" style="color:black"></span>
+								<h3>Alternative Hypothesis</h3>
+								<p>The population growth significantly outpaces the rate of food production.</p>
+								
+							</section>
+						</div>
+						
+					</div>
+					
+					<br>
+
+					<div class="col-12-small">
+						<section class="box style1">
+							<span class="icon featured far fa-grin-tongue-wink" style="color:black"></span>
+							<h3>Plan of Action</h3>
+							<p>To assess and evaluate the Philippines’ Performance in terms of Internal Food Production vs Population Growth Ratio.</p>
+						</section>
+					</div>
+					
 					<footer>
 						<!-- <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p> -->
 						<a href="#data" class="button large scrolly">Let's take a look at our data</a>
@@ -89,10 +150,23 @@
 			<article id="data" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>We mined the internet for Food Industry data.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<div class="row aln-center">
+							<div style="width: 500px; float: left;">
+								<h2 align="left">We explored the internet to gather relevant data,</h2> 
+								<h3 align="left">and here's what we found:</h3>
+							</div>
+							<div style="width: 700px ; float: right;">
+								<p align="left">In the process of finding relevant datasets, the team went to different libraries within UP Diliman. 
+									Ultimately, we were able to find most assistance from the School of Economics Library. 
+									After signing necessary paperwork, the library staff gave us access to several websites than we can use. 
+									Among the provided websites, we ended up using CDMNext, the next generation of CEIC Data manager, 
+									which allows us to access CEIC databases. This is where we found our dataset regarding the industry production index, 
+									specifically in food products. Furthermore, we found the dataset for the Philippines' population growth in macrotrends.net,
+									a public global metrics website.</p>
+							</div>
+					</div>
 					</header>
-					<div class="row">
+					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="https://docs.google.com/spreadsheets/d/1EjJV_BlzveaY_-5FKY5wDmJMm1zJY4Ne/edit?usp=sharing&ouid=110898838183663738865&rtpof=true&sd=true" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
@@ -107,13 +181,13 @@
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<!-- <div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 								<h3><a href="#">Tools</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
-						</div>
+						</div> -->
 
 						<!--
 						<div class="col-4 col-6-medium col-12-small">
