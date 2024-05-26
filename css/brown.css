@@ -364,9 +364,42 @@ h1, h2, h3, h4, h5, h6 {
   display: table-cell;
   vertical-align: middle;
 }
+
 #fh5co-testimonials .box-testimony blockquote p {
   font-style: italic;
 }
+
+#fh5co-testimonials .box-testimony .quote {
+  position: relative;
+  top: 30px;
+  /* left: 5px; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 0;
+  display: table;
+  color: #a03232;
+  width: 56px;
+  height: 56px;
+  margin-top: -30px;
+  background: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#fh5co-testimonials .box-testimony .quote > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#fh5co-testimonials .box-testimony .graph {
+  padding: 5px;
+  background: #efefef;
+  margin-bottom: 15px;
+}
+
 #fh5co-testimonials .box-testimony .author {
   line-height: 20px;
   color: white;
