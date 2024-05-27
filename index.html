@@ -250,9 +250,9 @@
 		    			<div class="col-md-8 col-md-offset-2 text-center">
 		    				<div class="fh5co-owl-text-wrap">
 						    	<div class="fh5co-owl-text">
-		    						<h1 class="fh5co-lead to-animate">something about exploring data</h1>
-									<h2 class="fh5co-sub-lead to-animate">something about initail exploring data</h3>
-									<p class="to-animate-2"><a href="#" data-nav-section="results" target="_blank" class="btn btn-secondary btn-lg">View Results</a></p>
+		    						<h1 class="fh5co-lead to-animate">Using Data Science to aid the future</h1>
+									<h2 class="fh5co-sub-lead to-animate">Explore our inital data analysis below</h3>
+									<p class="to-animate-2"><a href="#" data-nav-section="results" target="_blank" class="btn btn-secondary btn-lg">View Analysis</a></p>
 								</div>
 							</div>
 		    			</div>
@@ -321,8 +321,15 @@
 						<h3>Research Question #1</h3>
 						<p>Is the Philippines' food industry production keeping up with its population growth?</p>
 						<br>
+						<br>
+						<br>
 						<h3>Hypothesis #1</h3>
 						<p>The population growth significantly outpaces the rate of food production.</p>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -333,6 +340,9 @@
 						<br>
 						<h3>Hypothesis #2</h3>
 						<p>The country’s food production will eventually reach a point where its growth is equal to / or greater than the population growth</p>
+						<br>
+						<br>
+						<br>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -366,7 +376,7 @@
 					<div class="row">
 						<div class="col-md-12 single-animate animate-features-2">
 							<h3>Data Gathering Process</h3>
-							<p>In the process of finding relevant datasets, the team went to different libraries within UP Diliman. Ultimately, we were able to find most assistance from the School of Economics Library. After signing necessary paperwork, the library staff gave us access to several websites than we can use. Among the provided websites, we ended up using CDMNext, the next generation of CEIC Data manager, which allows us to access CEIC databases which compiled datasets from global databses. This is where we found our dataset regarding the industry production index, specifically in food products, and food imports, which were sourced from the Philippine Statistics Authority. However, the food imports dataset only contained data from 2021 to 2023. To fill in the missing years, we referred to data from the World Integrated Trade Solution (WITS) website.
+							<p style="text-align: justify;">In the process of finding relevant datasets, the team went to different libraries within UP Diliman. Ultimately, we were able to find most assistance from the School of Economics Library. After signing necessary paperwork, the library staff gave us access to several websites than we can use. Among the provided websites, we ended up using CDMNext, the next generation of CEIC Data manager, which allows us to access CEIC databases which compiled datasets from global databses. This is where we found our dataset regarding the industry production index, specifically in food products, and food imports, which were sourced from the Philippine Statistics Authority. However, the food imports dataset only contained data from 2021 to 2023. To fill in the missing years, we referred to data from the World Integrated Trade Solution (WITS) website.
 								We found the rest of the datasets through credible databases and government websites such as the Philippine Statistics Authority, as well as Macrotrends which is sourced from the United Nations' statistical records. The hunger percentage dataset was also found in macrotrends.net, sourcing from World Bank.</p>
 						</div>
 					</div>
@@ -424,7 +434,7 @@
 					<h2 class="to-animate">Data Analysis</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>something about inital exploratory data analysis</h3>
+							<h3>Initial Exploratory Data Analaysis</h3>
 						</div>
 					</div>
 				</div>
@@ -437,7 +447,7 @@
 							<img src="images/pop_food.png" class="graph img-responsive img-rounded">
 							<!-- <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p> -->
 						<!-- </blockquote> -->
-						<p class="author">Food Production vs Population<span class="subtext">We performed a Pearson Correlation test to determine if the trends are correlated. The test resulted in a coefficient r = 0.99 and p-value < 0.0001, implying a strong positive correlation. We can observe that both food production and population show  a positive trend. Moreover, the slope of the food production trend is significantly steeper than the population trend, which implies that the rate of food production growth outpaces population growth.</span></p>
+						<p class="author">Food Production vs Population<span class="subtext">We performed a Pearson Correlation test to determine if the trends are correlated. The test resulted in a coefficient r = 0.99 and p-value < 0.0001, implying a strong positive correlation; wherein we can observe that both food production and population show  a positive trend. Because of this, we reject the null hypothesis. Moreover, we can observe that the slope of the trend for food production is significantly steeper than the population trend, which implies that the rate of food production growth outpaces population growth. Thus we can speculate that our second hypothesis, wherein the country’s food production will eventually reach a point where its growth is equal to / or greater than the population growth, might eventually occur. </span></p>
 					</div>
 					
 				</div>
@@ -446,10 +456,12 @@
 					<div class="box-testimony to-animate">
 						<!-- <blockquote> -->
 							<span class="quote"><span><i class="icon-graph"></i></span></span>
-							<img src="images/foodpord_hunger.png" class="graph img-responsive img-rounded">
+							<img src="images/foodprod_hunger.png" class="graph img-responsive img-rounded">
 							<!-- <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p> -->
 						<!-- </blockquote> -->
-						<p class="author">Food Production vs Hunger Index<span class="subtext">We once again performed a Pearson Correlation test to determine if there is a correlation between the trends. The test resulted in a coefficient r = -0.92 and p-value < 0.0001, implying a strong negative correlation. To confirm this, we can observe that there is a general positive trend in food production growth and a corresponding negative trend for hunger growth. Observe that around the year 2002, there has been a small peak in food production. With this, we can also see that hunger growth starts to decline around the same time. Moreover, we can see around 2011 the slight dip in food production, which corresponds to the peak in the same year. We can see a significant observation of this correlation from years 2015 to 2019.</span></p>
+						<div>
+							<p class="author">Food Production vs Hunger Index<span class="subtext">We once again performed a Pearson Correlation test to determine if there is a correlation between the trends. The test resulted in a coefficient r = -0.92 and p-value < 0.0001, implying a strong negative correlation. To confirm this, we can observe that there is a general positive trend in food production growth and a corresponding negative trend for hunger growth. Thus, we reject our null hypothesis. Observe that around the year 2002, there has been a small peak in food production. With this, we can also see that hunger growth starts to decline around the same time. Moreover, we can see around 2011 the slight dip in food production, which corresponds to the peak in the same year. We can see a more significant observation of this correlation from years 2015 to 2019.</span></p>
+						</div>
 					</div>
 					
 				</div>
@@ -458,7 +470,7 @@
 					<div class="box-testimony to-animate">
 						<!-- <blockquote> -->
 							<span class="quote"><span><i class="icon-graph"></i></span></span>
-							<img src="images/metro.png" class="graph img-responsive img-rounded">
+							<img src="images/pop_hunger.png" class="graph img-responsive img-rounded">
 							<!-- <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p> -->
 						<!-- </blockquote> -->
 						<p class="author">Population vs Hunger Index<span class="subtext">As additional support to help better visualize the ongoing trend of hunger within the country, this graph shows the number of hungry Filipinos in relation to the overall population of that year. Thus, we can see that as the population increases over time, hunger stays well below 20% of the general population. We can also notice that within the latest years, hunger has been taking up a lesser ration compared to the earlier years. However, we should recognize that our data is still plotted within the millions. Thus, although we can see a decrease in hunger over the years, it can be reasonably argued that until this number is closer to zero, the country still needs to do more to make this less.</span></p>
@@ -503,6 +515,7 @@
 			<div class="row" id="team">
 				<div class="col-md-12 section-heading text-center to-animate">
 					<h2>Team</h2>
+					<h3>Spring</h3>
 				</div>
 				<div class="col-md-12">
 					<div class="row row-bottom-padded-lg">
@@ -510,13 +523,11 @@
 							<div class="person">
 								<img src="images/person2.jpg" class="img-responsive img-rounded" alt="Person">
 								<h3 class="name">Alec Lopez</h3>
-								<div class="position">Web Developer</div>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+								<div class="position">Data Analyst</div>
+								<p>A 2nd Year BS Computer Science student from the University of the Philippines, Diliman. Interested in web development, game development, and musical performance and production. He aims to combine both his interests in game development and music production to create games where players can be immersed in the music.</p>
 								<ul class="social social-circle">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-instagram"></i></a></li>
-									<li><a href="#"><i class="icon-github"></i></a></li>
+									<li><a href="https://www.instagram.com/aaaaleclopez/"><i class="icon-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100075410361312"><i class="icon-facebook"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -525,12 +536,10 @@
 								<img src="images/person3.jpg" class="img-responsive img-rounded" alt="Person">
 								<h3 class="name">Paolo Lapira</h3>
 								<div class="position">Web Designer</div>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+								<p>A 2nd Year BS Computer Science student from the University of the Philippines, Diliman. Has passions in the field of Web Design, Data Science, Photography, and Culinary. His passion is to achieve his goals in the most enjoyable way possible. He strives to spread happiness and laughter in the most nonchalant way possible.</p>
 								<ul class="social social-circle">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-instagram"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble"></i></a></li>
+									<li><a href="https://www.instagram.com/1lapira/"><i class="icon-instagram"></i></a></li>
+									<li><a href=" https://www.facebook.com/paolo.lapira.0"><i class="icon-facebook"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -538,13 +547,11 @@
 							<div class="person">
 								<img src="images/person4.jpg" class="img-responsive img-rounded" alt="Person">
 								<h3 class="name">Fahad Decampong</h3>
-								<div class="position">Photographer</div>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+								<div class="position">Data Analyst</div>
+								<p>Graduating with high honors and 3 distinction awards in La Salle Green Hills, Fahad is currently pursuing Computer Science in UP Diliman in hopes to revolutionize the tech industry someday. He has high interests in machine learning and the booming growth in the field of Artificial Intelligence.</p>
 								<ul class="social social-circle">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-instagram"></i></a></li>
-									<li><a href="#"><i class="icon-github"></i></a></li>
+									<li><a href="https://www.instagram.com/decazizzly/"><i class="icon-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/decazizzly/"><i class="icon-facebook"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -712,7 +719,7 @@
 	</div> -->
 	
 
-	<footer id="footer" role="contentinfo">
+	<!-- <footer id="footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-12">
@@ -734,7 +741,7 @@
 			</div>
 		</div>
 	</footer>
-	
+	 -->
 	
 	<!-- For demo purposes Only ( You may delete this anytime :-) -->
 	<!-- <div id="colour-variations">
