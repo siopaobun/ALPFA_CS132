@@ -22,7 +22,7 @@ url_ipi_hunger = 'https://drive.google.com/uc?id=' + url_ipi_hunger.split('/')[-
 ipi_hunger = pd.read_csv(url_ipi_hunger,sep=',') # type: ignore
 
 # @title Design Elements
-
+'''
 # COLORS
 colors = ["#648FFF", "#785EF0", "#DC267F", "#FE6100", "#FFB000", "#000000", "#FFFFFF"]
 colors_grad = sns.color_palette('flare_r',  12)
@@ -86,6 +86,7 @@ mpl.rcParams['ytick.color'] = color_text
 
 # Line colors
 mpl.rcParams['axes.edgecolor'] = color_text
+'''
 
 # @title Visualizations
 
@@ -95,19 +96,27 @@ df_ipi_hunger = pd.DataFrame({
     'Cumulative IPI Growth (%)': ipi_hunger['Cumulative IPI Growth (%)'],
     'Cumulative Hunger Growth (%)': ipi_hunger['Cumulative Hunger Growth (%)']})
 
-f, ax = plt.subplots(figsize=(16, 8))
+f, ax = plt.subplots(figsize=(8, 6))
 
-sns.lineplot(x='Year', y='value', hue='variable', ax=ax, palette=colors[1:3], data=pd.melt(df_ipi_hunger, ['Year']))
-g = sns.regplot(x=ipi_hunger['Year'], y=ipi_hunger['Cumulative IPI Growth (%)'], scatter=False, line_kws={'lw':1, 'color':colors[1], 'alpha':0.5})
-g = sns.regplot(x=ipi_hunger['Year'], y=ipi_hunger['Cumulative Hunger Growth (%)'], scatter=False, line_kws={'lw':1, 'color':colors[2], 'alpha':0.5})
+# Pilipinuts Design
+# sns.lineplot(x='Year', y='value', hue='variable', ax=ax, palette=colors[1:3], data=pd.melt(df_ipi_hunger, ['Year']))
 
+# Website Design
+colors = ['#29AF67', '#A03232', '#FFFFFF']
+sns.lineplot(x='Year', y='value', hue='variable', ax=ax, palette=colors[0:2], data=pd.melt(df_ipi_hunger, ['Year']))
+g = sns.regplot(x=ipi_hunger['Year'], y=ipi_hunger['Cumulative IPI Growth (%)'], scatter=False, line_kws={'lw':1, 'color':colors[0], 'alpha':0.5})
+g = sns.regplot(x=ipi_hunger['Year'], y=ipi_hunger['Cumulative Hunger Growth (%)'], scatter=False, line_kws={'lw':1, 'color':colors[1], 'alpha':0.5})
 
 g.xaxis.set_major_locator(ticker.MultipleLocator(2))
 g.xaxis.set_major_formatter(ticker.ScalarFormatter())
 
-ax.set(xlabel="Year", ylabel="Cumulative Growth (%)")
-ax.set_title('Food Production Growth and Hunger Growth Per Year (2001-2021)')
+ax.set_xlabel("Year", fontsize=14)
+ax.set_ylabel("Cumulative Growth Rate (%)", fontsize=14)
+ax.set_title('Food Production Growth Rate vs Hunger Growth Rate', fontsize=16, pad=20)
 
+plt.show()
+
+'''
 if 'output.png' == True:    
     os.remove('output.png') 
 
@@ -115,3 +124,4 @@ plt.savefig('output.png', dpi=100, bbox_inches='tight')
 print(pearsonr(df_ipi_hunger['Cumulative IPI Growth (%)'], df_ipi_hunger['Cumulative Hunger Growth (%)']))
 
 os.remove('C:/Users/Alec/.matplotlib/fontlist-v330.json') 
+'''

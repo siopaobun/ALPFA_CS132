@@ -14,7 +14,7 @@ def millions(x, pos):
 
 formatter = FuncFormatter(millions)
 
-fig, ax = plt.subplots()
+f, ax = plt.subplots(figsize=(8, 6))
 
 ax.yaxis.set_major_formatter(formatter)
 
@@ -30,9 +30,13 @@ hungry_people = ipi_hunger['# of Hungry People']
 population = ipi_hunger['Population']
 
 '''
-cumulative = sns.lineplot(data=ipi_hunger, x="Year", y="Cumulative IPI Growth (%)")
-cumulative.xaxis.set_major_locator(ticker.MultipleLocator(2))
-cumulative.xaxis.set_major_formatter(ticker.ScalarFormatter())
+g = sns.barplot(data=ipi_hunger, x='Year', y="Population", ax=ax)
+g = sns.barplot(data=ipi_hunger, x='Year', y="# of Hungry People", ax=ax)
+ax.tick_params(axis='x', rotation=45)
+ax.xaxis.set_major_locator(ticker.MultipleLocator(2))
+ax.xaxis.set_major_formatter(ticker.ScalarFormatter())
+
+print(ipi_hunger)
 '''
 
 #Hypothesis testing:
@@ -40,13 +44,15 @@ cumulative.xaxis.set_major_formatter(ticker.ScalarFormatter())
 print(pearsonr(hungry_people, population))
 
 
-# plt.bar(years, population, label = "Population")
-# plt.bar(years, hungry_people, label = "Hungry People", color = 'r')
-# plt.xticks(np.arange(min(years), max(years)+1, 2.0))
-# plt.yticks(np.arange(1000000, 115000000, 5000000))
-# plt.xlabel("Year")
-# plt.ylabel("# of People ")
-# plt.legend()
-# plt.grid()
-# plt.title("Hungry People vs Population")
-# plt.show()
+plt.bar(years, population, label = "Population", color='#29AF67')
+plt.bar(years, hungry_people, label = "Hungry People", color = '#A03232')
+plt.xticks(np.arange(min(years), max(years)+1, 1.0))
+plt.yticks(np.arange(1000000, 115000000, 5000000))
+plt.xlabel("Year", fontsize=14)
+plt.xticks(rotation=45)
+plt.ylabel("Population Count", fontsize=14)
+plt.legend()
+plt.title("People Experiencing Hunger in Overall Population", fontsize=16, pad=20)
+
+
+plt.show()

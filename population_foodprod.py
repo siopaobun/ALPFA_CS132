@@ -44,20 +44,23 @@ df_pop_food = pd.DataFrame({
 # print(df_pop_food.corr(method=lambda x, y: pearsonr(x, y)[1])['Population Growth Rate (%)']['Food Production Growth Rate (%)'])
 
 #Hypothesis Testing #2 using scipy.stats
+f, ax = plt.subplots(figsize=(8, 6))
+
 print(pearsonr(df_pop_food['Population Growth Rate (%)'], df_pop_food['Food Production Growth Rate (%)']))
 
-# sns.lineplot(data=df_pop_food,x=df_pop_food['Year'], y=df_pop_food['Population Growth Rate (%)'],label='Population Growth Rate' )
-# sns.regplot(x=df_pop_food['Year'], y=df_pop_food['Food Production Growth Rate (%)'], scatter=False, label='Food Production Growth Rate', line_kws={'lw': 1})
-# sns.lineplot(data=Food_yearly,x=Food_yearly.index,y='Cumulative Growth',color='orange')
+sns.lineplot(data=df_pop_food, x=df_pop_food['Year'], y=df_pop_food['Population Growth Rate (%)'], 
+             ax=ax, label='Population Growth Rate', color='#A03232' )
+sns.regplot(x=df_pop_food['Year'], y=df_pop_food['Food Production Growth Rate (%)'], scatter=False, 
+            label='Food Production Growth Rate', color='#29AF67', line_kws={'lw': 1, 'alpha': 0.5})
+sns.lineplot(data=Food_yearly,x=Food_yearly.index,y='Cumulative Growth',color='#29AF67')
 
 # sns.set_theme(rc={'figure.figsize':(16,9)})
-# sns.set_theme(style="darkgrid")
+sns.set_theme(style="darkgrid")
+ax.set_xlabel("Year", fontsize=14)
+ax.set_ylabel("Cumulative Growth Rate (%)", fontsize=14)
 
-# Popu = sns.lineplot(data=population_data,x=population_data.index,y='Cumulative Growth')
+Popu = sns.lineplot(data=population_data,x=population_data.index,y='Cumulative Growth', color='#A03232')
 
-# plt.plot(population_data.index, population_data['Cumulative Growth'], label='Population Growth Rate')
-# plt.plot(Food_yearly.index, Food_yearly['Cumulative Growth'], label='Food Production Growth Rate')
-# plt.title("Population Growth Rate vs Food Production Growth Rate", fontsize=12, pad=20)
-# plt.legend()
-# plt.show()
+plt.title("Population Growth Rate vs Food Production Growth Rate", fontsize=16, pad=20)
+plt.show()
 
