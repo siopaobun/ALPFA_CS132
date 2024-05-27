@@ -53,12 +53,11 @@ print(pearsonr(df_pop_food['Population Growth Rate (%)'], df_pop_food['Food Prod
 # sns.set_theme(rc={'figure.figsize':(16,9)})
 # sns.set_theme(style="darkgrid")
 
+# Popu = sns.lineplot(data=population_data,x=population_data.index,y='Cumulative Growth')
 
-# # Popu = sns.lineplot(data=population_data,x=population_data.index,y='Cumulative Growth')
-
-
-# # plt.plot(population_data.index, population_data['Cumulative Growth'], label='Population Growth Rate')
-# # plt.plot(Food_yearly.index, Food_yearly['Cumulative Growth'], label='Food Production Growth Rate')
-# plt.title("Population Gorwth Rate vs Food Production Growth Rate", fontsize=12, pad=20)
+# plt.plot(population_data.index, population_data['Cumulative Growth'], label='Population Growth Rate')
+# plt.plot(Food_yearly.index, Food_yearly['Cumulative Growth'], label='Food Production Growth Rate')
+# plt.title("Population Growth Rate vs Food Production Growth Rate", fontsize=12, pad=20)
 # plt.legend()
 # plt.show()
+
