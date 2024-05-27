@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-header .navbar-brand {
     color: #a03232 !important;
   }
+  
   #fh5co-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
     -webkit-transition: 0.3s;
@@ -371,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-testimonials .box-testimony .quote {
   position: relative;
-  top: 30px;
+  top: 0.37em;
   /* left: 5px; */
   margin-left: auto;
   margin-right: auto;
@@ -388,6 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.234);
 }
 #fh5co-testimonials .box-testimony .quote > span {
   display: table-cell;
@@ -398,18 +400,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   background: #efefef;
   margin-bottom: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.461), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #fh5co-testimonials .box-testimony .author {
-  line-height: 20px;
+  line-height: 25px;
   color: white;
   font-size: 20px;
-  margin-left: 20px;
+  
 }
 #fh5co-testimonials .box-testimony .author .subtext {
   display: block;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
+  text-align: justify;
 }
 
 #fh5co-pricing .price-box {
