@@ -115,14 +115,3 @@ plt.savefig('output.png', dpi=100, bbox_inches='tight')
 print(pearsonr(df_ipi_hunger['Cumulative IPI Growth (%)'], df_ipi_hunger['Cumulative Hunger Growth (%)']))
 
 os.remove('C:/Users/Alec/.matplotlib/fontlist-v330.json') 
-
-'''
-The data starts from the base year (2001) with zero cumulative growth in either food production and hunger.
-To test the correlation between the two variables, we performed a Pearson Correlation test to determine if the 
-graphs are correlated. The test resulted in a coefficient r = -0.92, implying a strong negative correlation.
-To confirm this, we can observe that there is a positive trend in food production growth and a
-negative trend for hunger growth. Observe that around the year 2002, there has been a small peak in food 
-production. With this, we can also see that the hunger growth starts to decline around the same time.
-Moreover, we can see around 2011 the slight dip in food production, which corresponds to the peak in the same year.
-We can see a significant observation of this correlation from years 2015 to 2019.
-'''
